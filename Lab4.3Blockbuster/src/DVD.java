@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class DVD extends Movie {
 
 	// variables
-	Validator validator = new Validator();
-	Scanner scnr = new Scanner(System.in);
+//	Validator validator = new Validator();
+//	Scanner scnr = new Scanner(System.in);
 	private int playCounter = 0;
 
 	// constructor

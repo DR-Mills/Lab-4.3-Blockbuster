@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class VHS extends Movie {
 
-	Validator validator = new Validator();
-	Scanner scnr = new Scanner(System.in);
+//	Validator validator = new Validator();
+//	Scanner scnr = new Scanner(System.in);
 	
 	
 	// instance variables

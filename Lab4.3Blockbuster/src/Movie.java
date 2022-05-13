@@ -7,8 +7,8 @@ public abstract class Movie {
 	private String title;
 	private int runTime;
 	private ArrayList<String> scenes = new ArrayList<>();
-	private Validator validator = new Validator();
-	private Scanner scnr = new Scanner(System.in);
+	protected Validator validator = new Validator();
+	protected Scanner scnr = new Scanner(System.in);
 	
 
 	// getters & setters
