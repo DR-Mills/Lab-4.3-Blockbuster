@@ -34,8 +34,4 @@ public class VHS extends Movie {
 	}
 
 
-	@Override
-	public boolean userEngaged() {
-			return validator.userContinueYorN("\nWatch another scene? ", scnr);
-	}
 }

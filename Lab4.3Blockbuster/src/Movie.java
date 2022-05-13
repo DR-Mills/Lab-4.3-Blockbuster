@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public abstract class Movie {
 
@@ -6,6 +7,9 @@ public abstract class Movie {
 	private String title;
 	private int runTime;
 	private ArrayList<String> scenes = new ArrayList<>();
+	private Validator validator = new Validator();
+	private Scanner scnr = new Scanner(System.in);
+	
 
 	// getters & setters
 	public String getTitle() {
@@ -42,7 +46,9 @@ public abstract class Movie {
 	// methods
 	public abstract void play();
 
-	public abstract boolean userEngaged();
+	public boolean userEngaged() {
+		return validator.userContinueYorN("\nWatch another scene? ", scnr);
+	}
 
 	@Override
 	public String toString() {
