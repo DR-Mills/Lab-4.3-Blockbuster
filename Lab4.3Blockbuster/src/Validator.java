@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class Validator {
 
 	// validates whole integer within given range
-	public static int integerWithinRange(String promptMsg, Scanner scnr, int min, int max) {
+	public int integerWithinRange(String promptMsg, Scanner scnr, int min, int max) {
 		int returnValue = 0;
 		boolean keepGoing = true;
+		
 		System.out.print(promptMsg);
-
 		do {
 			try {
 				returnValue = scnr.nextInt();
@@ -28,16 +28,16 @@ public class Validator {
 		} while (keepGoing);
 
 		return returnValue;
-
 	}
 
 	// overloaded method
 	// validates input as "y" (or "yes") or "n" (or "no") and returns boolean y =
 	// true, n = false.
-	public static boolean userContinueYorN(String promptMsg, Scanner scnr) {
+	public boolean userContinueYorN(String promptMsg, Scanner scnr) {
 		String userInput = null;
 		boolean invalidInput = true;
 		boolean userContinues = false;
+		
 		System.out.print(promptMsg);
 
 		do {
@@ -65,10 +65,11 @@ public class Validator {
 	// overloaded method
 	// validates input as "y" (or "yes") or "n" (or "no") and returns boolean y =
 	// true, n = false.
-	public static boolean userContinueYorN(String promptMsg, String goodbyeMsg, Scanner scnr) {
+	public boolean userContinueYorN(String promptMsg, String goodbyeMsg, Scanner scnr) {
 		String userInput = null;
 		boolean invalidInput = true;
 		boolean userContinues = false;
+		
 		System.out.print(promptMsg);
 
 		do {
@@ -93,9 +94,10 @@ public class Validator {
 		return userContinues;
 	}
 
-	public static String stringLettersOnly(String prompt, Scanner scnr) {
+	public String stringLettersOnly(String prompt, Scanner scnr) {
 		boolean tryAgain = true;
 		String userString;
+		
 		do {
 			System.out.println(prompt);
 			userString = scnr.nextLine();
@@ -107,6 +109,7 @@ public class Validator {
 				System.out.println("Please enter letters only; numbers and special characters are not allowed: ");
 			}
 		} while (tryAgain);
+		
 		return userString;
 	}
 }
