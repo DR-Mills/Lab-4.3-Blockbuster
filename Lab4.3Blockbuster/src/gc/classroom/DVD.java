@@ -1,16 +1,18 @@
+package gc.classroom;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class DVD extends Movie {
 
 	// variables
-//	Validator validator = new Validator();
-//	Scanner scnr = new Scanner(System.in);
 	private int playCounter = 0;
 
 	// constructor
 	public DVD(String title, int runTime, ArrayList<String> scenes) {
 		super(title, runTime, scenes);
+	}
+	
+	public void setPlayCounter(int playCounter) {
+		this.playCounter = playCounter;
 	}
 
 	// methods

@@ -1,3 +1,4 @@
+package gc.classroom;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -68,7 +69,7 @@ public abstract class Movie {
 		for (int i = 0; i < scenes.size(); i++) {
 			
 			try {
-				partialScene = scenes.get(i).substring(0, 40) + ". . . ";	
+				partialScene = scenes.get(i).substring(0, 45) + ". . . ";	
 			} catch (StringIndexOutOfBoundsException e) {
 				partialScene = scenes.get(i).substring(0, scenes.get(i).length());
 			}

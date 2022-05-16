@@ -1,11 +1,7 @@
+package gc.classroom;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class VHS extends Movie {
-
-//	Validator validator = new Validator();
-//	Scanner scnr = new Scanner(System.in);
-	
 	
 	// instance variables
 	private int currentTime;
@@ -17,6 +13,17 @@ public class VHS extends Movie {
 	}
 
 	
+	// getters & setters
+	public int getCurrentTime() {
+		return currentTime;
+	}
+
+	public void setCurrentTime(int currentTime) {
+		this.currentTime = currentTime;
+	}
+
+
+
 	// methods
 	@Override
 	public void play() {
